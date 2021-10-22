@@ -1,0 +1,24 @@
+
+ALGORITHM task_two
+VAR
+
+ch : char;
+BEGIN
+count=0;
+countword=1;
+countvoy=0;
+WHILE (ch<>"." and num>0) DO
+  if (ch<>’ ‘) then
+    count=count+1;
+  else if (ch=’ ‘) then
+    countword=countword+1; 
+  else if (ch=’a, e, i, o, u, y ‘) then
+    countvoy=countvoy+1;
+  else
+  write("nothing");
+END_WHILE  
+ write("the length of the sentence=",count);
+ write("the number of words in the sentence=",countword);
+ write("the number of vowels in the sentence=",countvoy);
+ END
+
