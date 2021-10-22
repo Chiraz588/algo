@@ -1,0 +1,27 @@
+ALGORITHM algo2
+VAR
+     tab1 : ARRAY_OF INTEGER;
+     tab2 : ARRAY_OF INTEGER;
+     tab3 : ARRAY_OF INTEGER;
+BEGIN
+ sum=0;
+    FOR i FROM 0 TO length(tab1) STEP 1  DO 
+     tab1[i]= element;
+          FOR i FROM 0 TO length(tab2) STEP 1  DO
+             FOR i FROM 0 TO length(tab3) STEP 1  DO
+                     IF (tab2=element) THEN
+                       sum=element;
+                       tab3[i]=element
+                     ELSE
+                     write("this element is not found")
+                     END_IF
+             END_FOR
+             i=i+1;
+           sum+=sum;
+          END_FOR
+      i=i+1;
+    END_FOR
+    i=i+1;
+    write("Sum of overlapping elements="sum);
+    write("Common elements are :")
+END
