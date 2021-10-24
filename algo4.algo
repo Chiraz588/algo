@@ -1,0 +1,34 @@
+PROCEDURE INSERTsort(tab)
+VAR
+    tab: ARRAY_OF INTEGER;
+BEGIN
+	int key = tab[i]; 
+	int j = i - 1; 
+   FOR i FROM 1 TO length(tab) STEP 1  DO
+     WHILE (j >= 0) and (tab[j] > key) DO
+         	tab[j + 1] = tab[j]; 
+				j = j - 1;
+     END_WHILE
+     tab[j + 1] = key; 
+   END_FOR
+END
+  
+
+or 
+
+/* other solutions */
+
+PROCEDURE insersort(tab)
+VAR
+    tab: ARRAY_OF INTEGER;
+BEGIN
+   i :=1;
+   WHILE (i < length(tab)) DO
+      j:=i;
+       WHILE (j > 0) and (tab[j-1] > tab[j])DO
+           swap tab[j] and tab[j-1]
+             j := j - 1;
+       END_WHILE
+       i := i + 1
+   END_WHILE
+END
